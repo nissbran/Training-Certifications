@@ -42,6 +42,9 @@ namespace Chapter1
         public void Cotravariance()
         {
             ContravarianceDel del = DoSomething;
+
+            // Because the method DoSomething can work with a TextWriter, it surely can also work with a StreamWriter. 
+            // Because of contravariance, you can call the delegate and pass an instance of StreamWriter to the DoSomething method.
         }
     }
 }
