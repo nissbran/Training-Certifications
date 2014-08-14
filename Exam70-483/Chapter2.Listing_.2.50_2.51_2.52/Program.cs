@@ -24,7 +24,7 @@ namespace Chapter2
             // you help the user of the class by modifying both the Width and Height properties together.
             // This way, the rectangle will always be a square. 
 
-            Rectangle rectangle = new Square();
+            Rectangle rectangle = new Square(0,0);
             rectangle.Width = 10;
             rectangle.Height = 5;
 
@@ -46,8 +46,8 @@ namespace Chapter2
             Height = height;
         }
 
-        public int Height { get; set; }
-        public int Width { get; set; }
+        public virtual int Height { get; set; }
+        public virtual int Width { get; set; }
 
         public int Area
         {
@@ -62,6 +62,11 @@ namespace Chapter2
     /// </summary>
     class Square : Rectangle
     {
+        public Square(int width, int height) :
+            base(width, height)
+        {
+        }
+
         public override int Width
         {
             get

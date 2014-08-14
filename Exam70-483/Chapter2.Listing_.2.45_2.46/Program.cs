@@ -41,7 +41,7 @@ namespace Chapter2
 
     class Order: IEntity
     {
-        public int Id { get; }
+        public int Id { get; set; }
     }
 
     class OrderRepository : Repository<Order>
