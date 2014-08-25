@@ -1,0 +1,21 @@
+﻿{
+    "persons": [
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "contactDetails": {
+                "emailAddress": "john@unknown.com"
+            }
+
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "contactDetails": {
+                "emailAddress": "jane@unknown.com",
+                "phoneNumber": "001122334455"
+            }
+        }
+    ]
+
+}

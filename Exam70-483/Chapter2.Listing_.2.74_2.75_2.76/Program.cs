@@ -25,6 +25,15 @@ namespace Chapter2
                 new CodeTypeReferenceExpression("Console"),
                 "WriteLine", new CodePrimitiveExpression("Hello World!"));
 
+            CodeMemberField memberField = new CodeMemberField();
+            memberField.Type = new CodeTypeReference(typeof(float));
+
+            CodeMemberProperty memberPropery = new CodeMemberProperty();
+            //memberPropery.ha
+
+
+            CodeConditionStatement cond = new CodeConditionStatement();
+
             compileUnit.Namespaces.Add(myNamespace);
             myNamespace.Types.Add(myClass);
             myClass.Members.Add(start);
@@ -36,6 +45,7 @@ namespace Chapter2
             {
                 IndentedTextWriter tw = new IndentedTextWriter(sw, "    ");
                 provider.GenerateCodeFromCompileUnit(compileUnit, tw, new CodeGeneratorOptions());
+                
                 tw.Close();
             }
         }

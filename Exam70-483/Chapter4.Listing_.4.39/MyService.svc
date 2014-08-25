@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Chatper4.Listing_._4._39.MyService" CodeBehind="MyService.svc.cs" %>

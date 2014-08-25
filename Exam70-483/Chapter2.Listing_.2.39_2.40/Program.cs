@@ -13,9 +13,6 @@ namespace Chapter2
     /// In the next objective, you look at how you can design and use interfaces.
     /// But regarding the topic of encapsulation, you need to know about explicit interface implementation.
     /// 
-    /// As an example of explicit interface implementation, look at the Entity Framework (an object-relational mapper that’s part of the .NET Framework).
-    /// When working with the Entity Framework, you work with a class DbContext, 
-    /// which is a wrapper around ObjectContext and exposes an easier-to-use interface. 
     /// </summary>
     class Program
     {
